@@ -40,10 +40,10 @@ const products=require("./Route/product");
 // const vendor=require("./Route/vendor");
 const seller=require("./Route/seller");
 
-app.use("/customer",customer);
-app.use("/product",products);
+app.use("https://parthtrivedi122.github.io/amazon.github.io//customer",customer);
+app.use("https://parthtrivedi122.github.io/amazon.github.io//product",products);
 // app.use("/vendor",vendor);
-app.use("/seller",seller);
+app.use("https://parthtrivedi122.github.io/amazon.github.io//seller",seller);
 app.use('/static',express.static("static")); // to server external files to ejs
 
 
