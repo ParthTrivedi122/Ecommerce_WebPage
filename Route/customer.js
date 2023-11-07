@@ -8,7 +8,7 @@ const product = require("../schema/productSchema")
 const Order = require("../schema/orderSchema")
 
 
-router.get('https://parthtrivedi122.github.io/amazon.github.io/', (req, res) => {
+router.get('/login', (req, res) => {
     res.render('custLogin/custLogin.ejs');
 })
 
