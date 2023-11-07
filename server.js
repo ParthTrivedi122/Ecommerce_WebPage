@@ -16,7 +16,16 @@ app.use('/static',express.static("static"));
 app.use(express.urlencoded({ extended: true }));
 
 
-mongoose.connect("mongodb://127.0.0.1:27017/mycart");
+app.use(cors(
+  {
+  origin: ["https://Ecommerce_WebPage.vefcel.app"], 
+  methods: ["POST", "GET"],
+  credentials: true
+  }
+));
+
+
+mongoose.connect("mongodb+srv://parthlt:YG13RzDjg5J3lOMl@cluster0.wxlksfv.mongodb.net/");
 
 const session_duration = 86400000;
 app.use(session({
