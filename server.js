@@ -18,7 +18,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors(
   {
-  origin: ["https://Ecommerce_WebPage.vefcel.app"], 
+  origin: ["https://Ecommerce_WebPage.ver cel.app"], 
   methods: ["POST", "GET"],
   credentials: true
   }
