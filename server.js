@@ -16,16 +16,7 @@ app.use('/static',express.static("static"));
 app.use(express.urlencoded({ extended: true }));
 
 
-app.use(cors(
-  {
-  origin: ["https://parthtrivedi122.github.io/amazon.github.io"], 
-  methods: ["POST", "GET"],
-  credentials: true
-  }
-));
-
-
-mongoose.connect("mongodb+srv://parthlt:YG13RzDjg5J3lOMl@cluster0.wxlksfv.mongodb.net/");
+mongoose.connect("mongodb+srv://parthlt:YG13RzDjg5J3lOMl@cluster0.wxlksfv.mongodb.net/mycart");
 
 const session_duration = 86400000;
 app.use(session({
